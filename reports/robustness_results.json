@@ -1,0 +1,129 @@
+[
+  {
+    "case": "valid transaction",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": []
+  },
+  {
+    "case": "3 PCA features null (imputed)",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": [
+      "imputed_missing:V1,V5,V20"
+    ]
+  },
+  {
+    "case": "12 PCA features null (> limit)",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Value error, 12 of 28 PCA features are null; at most 10 allowed"
+  },
+  {
+    "case": "PCA feature key absent (treated as null)",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": [
+      "imputed_missing:V3"
+    ]
+  },
+  {
+    "case": "Amount missing",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Field required"
+  },
+  {
+    "case": "Negative Amount",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Input should be greater than or equal to 0"
+  },
+  {
+    "case": "Extreme Amount 900,000",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": [
+      "out_of_training_range:Amount"
+    ]
+  },
+  {
+    "case": "Extreme V14 = -1e6 (clipped)",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.00036,
+    "warnings": [
+      "out_of_training_range:V14"
+    ]
+  },
+  {
+    "case": "Amount as string '12.5' (coerced)",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": []
+  },
+  {
+    "case": "Amount as non-numeric string",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Input should be a valid number, unable to parse string as a number"
+  },
+  {
+    "case": "Unknown extra field",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Extra inputs are not permitted"
+  },
+  {
+    "case": "Empty transaction_id",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "String should have at least 1 character"
+  },
+  {
+    "case": "Injection-like transaction_id",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "String should match pattern '^[A-Za-z0-9_\\-:.]+$'"
+  },
+  {
+    "case": "Empty JSON object",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "Field required"
+  },
+  {
+    "case": "Batch of 0",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "List should have at least 1 item after validation, not 0"
+  },
+  {
+    "case": "Batch of 1001 (> limit)",
+    "status": 422,
+    "error": "invalid_payload",
+    "msg": "List should have at most 1000 items after validation, not 1001"
+  },
+  {
+    "case": "Batch of 500 valid",
+    "status": 200,
+    "scorer": "model",
+    "prob": 0.0,
+    "warnings": []
+  },
+  {
+    "case": "Malformed JSON body",
+    "status": 422,
+    "error": "invalid_payload"
+  },
+  {
+    "case": "NaN literal in V1",
+    "status": 422,
+    "error": "invalid_payload"
+  }
+]

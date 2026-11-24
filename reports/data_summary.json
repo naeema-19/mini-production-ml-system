@@ -1,0 +1,65 @@
+{
+  "n_rows_raw": 284807,
+  "n_frauds_raw": 492,
+  "duplicate_rows_raw": 1081,
+  "time_cutoffs_seconds": [
+    132929.0,
+    151328.0
+  ],
+  "splits": [
+    {
+      "split": "train",
+      "rows": 198648,
+      "frauds": 366,
+      "fraud_rate_pct": 0.1842,
+      "time_start_h": 0.0,
+      "time_end_h": 36.92
+    },
+    {
+      "split": "val",
+      "rows": 42719,
+      "frauds": 56,
+      "fraud_rate_pct": 0.1311,
+      "time_start_h": 36.92,
+      "time_end_h": 42.04
+    },
+    {
+      "split": "test",
+      "rows": 42724,
+      "frauds": 52,
+      "fraud_rate_pct": 0.1217,
+      "time_start_h": 42.04,
+      "time_end_h": 48.0
+    }
+  ],
+  "leakage_audit": {
+    "time_ordering_ok": true,
+    "id_overlap": 0,
+    "val_rows_with_identical_train_features": 824,
+    "test_rows_with_identical_train_features": 896,
+    "train_exact_duplicates_removed": 716,
+    "top_single_feature_auc_train": [
+      [
+        "V14",
+        0.9515
+      ],
+      [
+        "V12",
+        0.9433
+      ],
+      [
+        "V4",
+        0.9399
+      ],
+      [
+        "V3",
+        0.9225
+      ],
+      [
+        "V10",
+        0.9211
+      ]
+    ],
+    "suspicious_proxy_features(auc>0.99)": []
+  }
+}

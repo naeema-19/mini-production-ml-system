@@ -1,0 +1,626 @@
+{
+  "A_validation_natural": {
+    "summary": {
+      "max_feature_psi": 1.4407,
+      "max_psi_feature": "V1",
+      "n_features_warn": 8,
+      "n_features_alert": 7,
+      "data_quality_alerts": [],
+      "score_psi_status": "OK",
+      "critical_features_alert": [],
+      "retrain_recommended": false,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "summary_global_reference": {
+      "max_feature_psi": 0.9362,
+      "max_psi_feature": "V1",
+      "n_features_warn": 10,
+      "n_features_alert": 4,
+      "data_quality_alerts": [],
+      "score_psi_status": "OK",
+      "critical_features_alert": [],
+      "retrain_recommended": false,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "score_psi": {
+      "psi": 0.0027,
+      "psi_status": "OK"
+    },
+    "alert_rate_pct": 0.20131557386642945,
+    "top_features": {
+      "V1": {
+        "psi": 1.4407,
+        "ks_stat": 0.3775,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V3": {
+        "psi": 1.1326,
+        "ks_stat": 0.4768,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V28": {
+        "psi": 0.775,
+        "ks_stat": 0.3279,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V25": {
+        "psi": 0.3371,
+        "ks_stat": 0.2439,
+        "ks_pvalue": 5.736758461300718e-235,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V15": {
+        "psi": 0.3214,
+        "ks_stat": 0.2528,
+        "ks_pvalue": 1.1232892309343773e-252,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      }
+    },
+    "all_feature_psi": {
+      "V1": 1.4407,
+      "V2": 0.0165,
+      "V3": 1.1326,
+      "V4": 0.1709,
+      "V5": 0.2688,
+      "V6": 0.0804,
+      "V7": 0.1183,
+      "V8": 0.1109,
+      "V9": 0.0549,
+      "V10": 0.0675,
+      "V11": 0.2975,
+      "V12": 0.007,
+      "V13": 0.0037,
+      "V14": 0.075,
+      "V15": 0.3214,
+      "V16": 0.0072,
+      "V17": 0.0309,
+      "V18": 0.0462,
+      "V19": 0.022,
+      "V20": 0.0803,
+      "V21": 0.1344,
+      "V22": 0.2463,
+      "V23": 0.1636,
+      "V24": 0.1655,
+      "V25": 0.3371,
+      "V26": 0.1713,
+      "V27": 0.0764,
+      "V28": 0.775,
+      "Amount": 0.0018,
+      "hour_sin": 2.4226,
+      "hour_cos": 3.5869
+    }
+  },
+  "B_test_natural": {
+    "summary": {
+      "max_feature_psi": 1.6243,
+      "max_psi_feature": "V1",
+      "n_features_warn": 6,
+      "n_features_alert": 10,
+      "data_quality_alerts": [],
+      "score_psi_status": "OK",
+      "critical_features_alert": [
+        "V4"
+      ],
+      "retrain_recommended": true,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "summary_global_reference": {
+      "max_feature_psi": 1.0129,
+      "max_psi_feature": "V1",
+      "n_features_warn": 9,
+      "n_features_alert": 5,
+      "data_quality_alerts": [],
+      "score_psi_status": "OK",
+      "critical_features_alert": [],
+      "retrain_recommended": false,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "score_psi": {
+      "psi": 0.0063,
+      "psi_status": "OK"
+    },
+    "alert_rate_pct": 0.20129201385638051,
+    "top_features": {
+      "V1": {
+        "psi": 1.6243,
+        "ks_stat": 0.4171,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V3": {
+        "psi": 1.4609,
+        "ks_stat": 0.534,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V28": {
+        "psi": 1.0785,
+        "ks_stat": 0.3671,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V15": {
+        "psi": 0.5115,
+        "ks_stat": 0.3202,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V25": {
+        "psi": 0.5086,
+        "ks_stat": 0.3189,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      }
+    },
+    "all_feature_psi": {
+      "V1": 1.6243,
+      "V2": 0.0481,
+      "V3": 1.4609,
+      "V4": 0.2555,
+      "V5": 0.3599,
+      "V6": 0.0899,
+      "V7": 0.1832,
+      "V8": 0.1235,
+      "V9": 0.0939,
+      "V10": 0.0996,
+      "V11": 0.3789,
+      "V12": 0.011,
+      "V13": 0.0055,
+      "V14": 0.1044,
+      "V15": 0.5115,
+      "V16": 0.0131,
+      "V17": 0.0558,
+      "V18": 0.0487,
+      "V19": 0.0347,
+      "V20": 0.0986,
+      "V21": 0.2016,
+      "V22": 0.3301,
+      "V23": 0.2556,
+      "V24": 0.2348,
+      "V25": 0.5086,
+      "V26": 0.242,
+      "V27": 0.0994,
+      "V28": 1.0785,
+      "Amount": 0.0048,
+      "hour_sin": 0.0138,
+      "hour_cos": 0.0138
+    }
+  },
+  "C_test_covariate_shift": {
+    "summary": {
+      "max_feature_psi": 3.6908,
+      "max_psi_feature": "V14",
+      "n_features_warn": 5,
+      "n_features_alert": 12,
+      "data_quality_alerts": [],
+      "score_psi_status": "WARN",
+      "critical_features_alert": [
+        "V14",
+        "V4"
+      ],
+      "retrain_recommended": true,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "summary_global_reference": {
+      "max_feature_psi": 3.6454,
+      "max_psi_feature": "V14",
+      "n_features_warn": 9,
+      "n_features_alert": 7,
+      "data_quality_alerts": [],
+      "score_psi_status": "WARN",
+      "critical_features_alert": [
+        "V14"
+      ],
+      "retrain_recommended": true,
+      "investigate": true,
+      "page_oncall": false
+    },
+    "score_psi": {
+      "psi": 0.222,
+      "psi_status": "WARN"
+    },
+    "alert_rate_pct": 0.587491807883157,
+    "top_features": {
+      "V14": {
+        "psi": 3.6908,
+        "ks_stat": 0.7542,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V1": {
+        "psi": 1.6243,
+        "ks_stat": 0.4171,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V3": {
+        "psi": 1.4609,
+        "ks_stat": 0.534,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V28": {
+        "psi": 1.0785,
+        "ks_stat": 0.3671,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "Amount": {
+        "psi": 0.9248,
+        "ks_stat": 0.2365,
+        "ks_pvalue": 1.1919483546186867e-220,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      }
+    },
+    "all_feature_psi": {
+      "V1": 1.6243,
+      "V2": 0.0481,
+      "V3": 1.4609,
+      "V4": 0.2555,
+      "V5": 0.3599,
+      "V6": 0.0899,
+      "V7": 0.1832,
+      "V8": 0.1235,
+      "V9": 0.0939,
+      "V10": 0.0996,
+      "V11": 0.3789,
+      "V12": 0.011,
+      "V13": 0.0055,
+      "V14": 3.6908,
+      "V15": 0.5115,
+      "V16": 0.0131,
+      "V17": 0.0558,
+      "V18": 0.0487,
+      "V19": 0.0347,
+      "V20": 0.0986,
+      "V21": 0.2016,
+      "V22": 0.3301,
+      "V23": 0.2556,
+      "V24": 0.2348,
+      "V25": 0.5086,
+      "V26": 0.242,
+      "V27": 0.0994,
+      "V28": 1.0785,
+      "Amount": 0.9248,
+      "hour_sin": 0.0138,
+      "hour_cos": 0.0138
+    }
+  },
+  "D_test_pipeline_bug": {
+    "summary": {
+      "max_feature_psi": 1.6243,
+      "max_psi_feature": "V1",
+      "n_features_warn": 6,
+      "n_features_alert": 11,
+      "data_quality_alerts": [
+        "V4"
+      ],
+      "score_psi_status": "OK",
+      "critical_features_alert": [
+        "V12",
+        "V4"
+      ],
+      "retrain_recommended": true,
+      "investigate": true,
+      "page_oncall": true
+    },
+    "summary_global_reference": {
+      "max_feature_psi": 1.0129,
+      "max_psi_feature": "V1",
+      "n_features_warn": 8,
+      "n_features_alert": 6,
+      "data_quality_alerts": [
+        "V4"
+      ],
+      "score_psi_status": "OK",
+      "critical_features_alert": [
+        "V12"
+      ],
+      "retrain_recommended": true,
+      "investigate": true,
+      "page_oncall": true
+    },
+    "score_psi": {
+      "psi": 0.033,
+      "psi_status": "OK"
+    },
+    "alert_rate_pct": 0.1638423368598446,
+    "top_features": {
+      "V1": {
+        "psi": 1.6243,
+        "ks_stat": 0.4171,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V3": {
+        "psi": 1.4609,
+        "ks_stat": 0.534,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V28": {
+        "psi": 1.0785,
+        "ks_stat": 0.3671,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V15": {
+        "psi": 0.5115,
+        "ks_stat": 0.3202,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      },
+      "V25": {
+        "psi": 0.5086,
+        "ks_stat": 0.3189,
+        "ks_pvalue": 0.0,
+        "psi_status": "ALERT",
+        "missing_rate": 0.0
+      }
+    },
+    "all_feature_psi": {
+      "V1": 1.6243,
+      "V2": 0.0481,
+      "V3": 1.4609,
+      "V4": 0.2514,
+      "V5": 0.3599,
+      "V6": 0.0899,
+      "V7": 0.1832,
+      "V8": 0.1235,
+      "V9": 0.0939,
+      "V10": 0.0996,
+      "V11": 0.3789,
+      "V12": 0.4643,
+      "V13": 0.0055,
+      "V14": 0.1044,
+      "V15": 0.5115,
+      "V16": 0.0131,
+      "V17": 0.0558,
+      "V18": 0.0487,
+      "V19": 0.0347,
+      "V20": 0.0986,
+      "V21": 0.2016,
+      "V22": 0.3301,
+      "V23": 0.2556,
+      "V24": 0.2348,
+      "V25": 0.5086,
+      "V26": 0.242,
+      "V27": 0.0994,
+      "V28": 1.0785,
+      "Amount": 0.0048,
+      "hour_sin": 0.0138,
+      "hour_cos": 0.0138
+    }
+  },
+  "hourly_live": [
+    {
+      "hour": 36,
+      "n": 555,
+      "frauds": 1,
+      "score_psi": 0.0269,
+      "max_feature_psi": 0.5418,
+      "amount_psi": 0.0128,
+      "v14_psi": 0.0313,
+      "retrain": false,
+      "alert_rate_pct": 0.36036036036036034
+    },
+    {
+      "hour": 37,
+      "n": 7780,
+      "frauds": 8,
+      "score_psi": 0.0075,
+      "max_feature_psi": 1.5628,
+      "amount_psi": 0.0052,
+      "v14_psi": 0.1016,
+      "retrain": false,
+      "alert_rate_pct": 0.17994858611825193
+    },
+    {
+      "hour": 38,
+      "n": 8541,
+      "frauds": 10,
+      "score_psi": 0.0036,
+      "max_feature_psi": 1.5158,
+      "amount_psi": 0.0057,
+      "v14_psi": 0.0983,
+      "retrain": false,
+      "alert_rate_pct": 0.15220700152207
+    },
+    {
+      "hour": 39,
+      "n": 8625,
+      "frauds": 12,
+      "score_psi": 0.0102,
+      "max_feature_psi": 1.5616,
+      "amount_psi": 0.0049,
+      "v14_psi": 0.1293,
+      "retrain": false,
+      "alert_rate_pct": 0.19710144927536233
+    },
+    {
+      "hour": 40,
+      "n": 8667,
+      "frauds": 8,
+      "score_psi": 0.0079,
+      "max_feature_psi": 1.5215,
+      "amount_psi": 0.0086,
+      "v14_psi": 0.1051,
+      "retrain": false,
+      "alert_rate_pct": 0.19614630206530517
+    },
+    {
+      "hour": 41,
+      "n": 8284,
+      "frauds": 17,
+      "score_psi": 0.0189,
+      "max_feature_psi": 1.5018,
+      "amount_psi": 0.0077,
+      "v14_psi": 0.1302,
+      "retrain": false,
+      "alert_rate_pct": 0.27764365041042977
+    },
+    {
+      "hour": 42,
+      "n": 8432,
+      "frauds": 18,
+      "score_psi": 0.0079,
+      "max_feature_psi": 1.6613,
+      "amount_psi": 0.0052,
+      "v14_psi": 0.0723,
+      "retrain": true,
+      "alert_rate_pct": 0.3083491461100569
+    },
+    {
+      "hour": 43,
+      "n": 7655,
+      "frauds": 12,
+      "score_psi": 0.0115,
+      "max_feature_psi": 1.6368,
+      "amount_psi": 0.0089,
+      "v14_psi": 0.1061,
+      "retrain": true,
+      "alert_rate_pct": 0.1959503592423253
+    },
+    {
+      "hour": 44,
+      "n": 7776,
+      "frauds": 10,
+      "score_psi": 0.0085,
+      "max_feature_psi": 1.6882,
+      "amount_psi": 0.0038,
+      "v14_psi": 0.1139,
+      "retrain": true,
+      "alert_rate_pct": 0.19290123456790123
+    },
+    {
+      "hour": 45,
+      "n": 7808,
+      "frauds": 2,
+      "score_psi": 0.0141,
+      "max_feature_psi": 1.7226,
+      "amount_psi": 0.0137,
+      "v14_psi": 0.094,
+      "retrain": true,
+      "alert_rate_pct": 0.1408811475409836
+    },
+    {
+      "hour": 46,
+      "n": 6464,
+      "frauds": 6,
+      "score_psi": 0.0267,
+      "max_feature_psi": 1.5716,
+      "amount_psi": 0.035,
+      "v14_psi": 0.1389,
+      "retrain": false,
+      "alert_rate_pct": 0.18564356435643564
+    },
+    {
+      "hour": 47,
+      "n": 4856,
+      "frauds": 4,
+      "score_psi": 0.0316,
+      "max_feature_psi": 1.4809,
+      "amount_psi": 0.0833,
+      "v14_psi": 0.1627,
+      "retrain": false,
+      "alert_rate_pct": 0.1441515650741351
+    }
+  ],
+  "rolling_pr_auc_3h": [
+    {
+      "window_start_h": 36,
+      "frauds": 19,
+      "pr_auc": 0.8609957815174392
+    },
+    {
+      "window_start_h": 37,
+      "frauds": 30,
+      "pr_auc": 0.831594279966066
+    },
+    {
+      "window_start_h": 38,
+      "frauds": 30,
+      "pr_auc": 0.8094400335889689
+    },
+    {
+      "window_start_h": 39,
+      "frauds": 37,
+      "pr_auc": 0.8469478093399604
+    },
+    {
+      "window_start_h": 40,
+      "frauds": 43,
+      "pr_auc": 0.8617740283353986
+    },
+    {
+      "window_start_h": 41,
+      "frauds": 47,
+      "pr_auc": 0.830651003667412
+    },
+    {
+      "window_start_h": 42,
+      "frauds": 40,
+      "pr_auc": 0.8107601725149155
+    },
+    {
+      "window_start_h": 43,
+      "frauds": 24,
+      "pr_auc": 0.7562945314711461
+    },
+    {
+      "window_start_h": 44,
+      "frauds": 18,
+      "pr_auc": 0.6554646416202125
+    },
+    {
+      "window_start_h": 45,
+      "frauds": 12,
+      "pr_auc": 0.5287926058189281
+    }
+  ],
+  "day_over_day_median_12_18h": {
+    "V1": {
+      "day1": -0.271269967,
+      "day2": 0.12980546599999998
+    },
+    "V3": {
+      "day1": 0.725381136,
+      "day2": -0.751938263
+    },
+    "V14": {
+      "day1": 0.009837093,
+      "day2": -0.0157491675
+    },
+    "Amount": {
+      "day1": 27.0,
+      "day2": 24.06
+    }
+  }
+}
